@@ -1,7 +1,7 @@
 {add\ object
     {guis
         {Message Number\ atom\ box Symbol\ atom\ box List\ box Bang Toggle Number2 Vertical\ slider Horizontal\ slider Vertical\ radio Horizontal\ radio VU\ meter Canvas Graph Array}}
-    {message\ management
+    {general\ data\ management
         {bang trigger route swap print float int value symbol makefilename send receive}}
     {list\ management
         {pack unpack list\ append list\ prepend list\ store list\ split list\ trim list\ length list\ fromsymbol list\ tosymbol}}
