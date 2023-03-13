@@ -13,7 +13,7 @@ proc category_menu::load_menutree {} {
     return $menutree
 }
 
-proc menu_send_item {w x y item} {
+proc category_menu::send_item {w x y item} {
     switch $item {
         "Message" {
             pdsend "$w msg $x $y"
@@ -85,7 +85,7 @@ proc category_menu::create {cmdstring code result op} {
                 # interpret the dash in the -label to make it a separator
                 $mymenu.$category.$subcategory add command \
                     -label [regsub -all {^\-$} $item {−}] \
-                    -command "menu_send_item \$::focused_window $x $y {$item}"
+                    -command "::category_menu::send_item \$::focused_window $x $y {$item}"
             }
         }
     }
