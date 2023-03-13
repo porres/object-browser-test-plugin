@@ -27,6 +27,9 @@ proc category_menu::send_item {w x y item} {
         "List box" {
             pdsend "$w listbox $x $y 20 0 0 0 - - - 0"
         }
+        "Comment" {
+            pdsend "$w text $x $y"
+        }
         "Bang" {
             pdsend "$w obj $x $y bng"
         }
@@ -93,4 +96,4 @@ proc category_menu::create {cmdstring code result op} {
 
 trace add execution ::pdtk_canvas::create_popup leave category_menu::create
 
-::pdwindow::post "object-browser-test-plugin loaded (this is an experimental/unreleased plugin, version: 0.0.0-aplha-0)\n"
+::pdwindow::post "object-browser-test-plugin loaded (this is an experimental/unreleased plugin, version: 0.0.0-aplha-1)\n"

@@ -1,6 +1,6 @@
 {add\ object
     {guis
-        {Message Number\ atom\ box Symbol\ atom\ box List\ box Bang Toggle Number2 Vertical\ slider Horizontal\ slider Vertical\ radio Horizontal\ radio VU\ meter Canvas Graph Array}}
+        {Message Number\ atom\ box Symbol\ atom\ box List\ box Comment Bang Toggle Number2 Vertical\ slider Horizontal\ slider Vertical\ radio Horizontal\ radio VU\ meter Canvas Graph Array}}
     {general\ data\ management
         {bang trigger route swap print float int value symbol makefilename send receive}}
     {list\ management
